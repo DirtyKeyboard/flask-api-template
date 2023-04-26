@@ -21,3 +21,6 @@ class Home(Resource):
         return make_response('', 202)
     
 api.add_resource(Home, '/')
+
+if __name__ == '__main__':
+    app.run(port=5555, debug=True)
