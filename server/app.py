@@ -19,3 +19,5 @@ db.init_app(app)
 class Home(Resource):
     def get(self):
         return make_response('', 202)
+    
+api.add_resource(Home, '/')
